@@ -11,16 +11,10 @@ server = Flask(__name__)
 logger = telebot.logger
 logger.setLevel(logging.DEBUG)
 
-def Ch_id(id):
-    ch = False
-    file = open("users.txt",'r')
-    for line in file:
-        if str(line.strip()) == str(id):
-            ch = True
-    file.close()
-    return ch
+
 @bot.message_handler(commands=['start'])
 def boten(message):
+    bot.send_message(message.chat.id,"done")
     ch = '@dtdtdt'
     sudo_id = "1372680721"
     token=Token
