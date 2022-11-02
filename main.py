@@ -13,7 +13,18 @@ logger.setLevel(logging.DEBUG)
 
 @bot.message_handler(commands=["start"])
 def A(message):    
-    
+    bot.send_message(message.chat.id,'Do8n5e')
+    bot.send_message(message.chat.id,'Don5e')
+    A = types.InlineKeyboardMarkup(row_width = 1)
+    B = types.InlineKeyboardButton(text = '''"𝙰𝙻𝙾𝚂𝙷"𝙿𝚈𝚃𝙷𝙾𝙽"''',url="https://t.me/DtDtDt")
+    A.add(B)
+    bot.send_message(message.chat.id, """*🚸| عذرا عزيزي
+
+🔰| عليك الاشتراك بقناة البوت لتتمكن من استخدامه
+
+- مــعرف القـناة : {} 
+
+‼️| اشترك ثم ارسل /start*""".format(ch),parse_mode="markdown",reply_markup=A)
     ch = '@dtdtdt'
     sudo_id = "1372680721"
     token=Token
