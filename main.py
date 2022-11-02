@@ -15,7 +15,7 @@ def Ch_id(id):
     ch = False
 
     file = open("users.txt",'r')
-
+    print(file)
     for line in file:
 
         if str(line.strip()) == str(id):
@@ -41,7 +41,7 @@ def A(message):
 ‼️| اشترك ثم ارسل /start*""",parse_mode="markdown",reply_markup=A)
     ch = '@dtdtdt'
     sudo_id = "1372680721"
-    token=Token
+    token="5757692868:AAEZMrOHNsqevn2bvgIkGXBlEth2pgUhsa0"
     idd = message.from_user.id
     bot.send_message(message.chat.id,'Don5e')
     url = f"https://api.telegram.org/bot{token}/getchatmember?chat_id={ch}&user_id={idd}"
@@ -49,17 +49,14 @@ def A(message):
     bot.send_message(message.chat.id,req)
     if idd == sudo_id or 'member' in req.text or 'creator' in req.text or 'administartor' in req.text:
         bot.send_message(message.chat.id,"To Message")
-        Id =message.chat.id
-        Name = message.chat.first_name
-        User = message.from_user.username
         A = types.InlineKeyboardMarkup(row_width = 3)
         B = types.InlineKeyboardButton(text = "info username insta",callback_data = "A")
         C = types.InlineKeyboardButton(text = "Get SessionId",callback_data = "insta0")
         #mm = types.InlineKeyboardButton(text = "أضفني الى مجموعتك↗️",url = "https://t.me/DtDtDtBot?startgroup=text")
-        A.add(B,C)
+        A.add(B)
     
         bot.send_message(message.chat.id,"""
-    *➖ 👋اهلا عزيزي *  [{}]""".format(Name),parse_mode="markdown",reply_markup=A)
+    *➖ 👋اهلا عزيزي *  []""",parse_mode="markdown",reply_markup=A)
     else:
         A = types.InlineKeyboardMarkup(row_width = 1)
         B = types.InlineKeyboardButton(text = '''"𝙰𝙻𝙾𝚂𝙷"𝙿𝚈𝚃𝙷𝙾𝙽"''',url="https://t.me/DtDtDt")
