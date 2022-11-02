@@ -113,7 +113,7 @@ By : @aaalaaa*
                           """, parse_mode="markdown")
     
     except:
-     	  bot.send_message(message.chat.id,"Error User .") 	  
+     	  bot.send_message(message.chat.id,f"Error User .{req}") 	  
      	  
 
 def get_sessionid(message):
