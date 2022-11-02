@@ -55,7 +55,7 @@ def boten(message):
         A.add(C)
     
         bot.send_message(message.chat.id,"""
-    *➖ 👋اهلا عز...يزي *  [{}]""".format(Name),parse_mode="markdown",reply_markup=A)
+    *➖ 👋اهلا عزيزي *  [{}]""".format(Name),parse_mode="markdown",reply_markup=A)
     else:
         A = types.InlineKeyboardMarkup(row_width = 1)
         B = types.InlineKeyboardButton(text = '''"𝙰𝙻𝙾𝚂𝙷"𝙿𝚈𝚃𝙷𝙾𝙽"''',url="https://t.me/DtDtDt")
@@ -199,7 +199,7 @@ def App_Admin(message):
 
 @server.route(f"/{BOT_TOKEN}", methods=["POST"])
 def redirect_message():
-    return "Ali"
+   
     json_string = request.get_data().decode("utf-8")
     update = telebot.types.Update.de_json(json_string)
     bot.process_new_updates([update])
