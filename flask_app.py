@@ -81,7 +81,7 @@ def get_info(message):
 'x-ig-app-id':'1217981644879628',
 'x-ig-www-claim':'hmac.AR1GMxGxYNiyJ_Qr59WPgznfqJKtnAogUcpBr_5hDMSoxwjz'}
         i =requests.get(url, headers=head)
-        bot.send_message(message.chat.id,f"ResPosne : {i}") 
+       # bot.send_message(message.chat.id,f"ResPosne : {i}") 
         req=i.json()	  
         #print(req)
         following =req['data']['user']['edge_follow']['count']
