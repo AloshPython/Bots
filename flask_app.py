@@ -5,7 +5,7 @@ os.system("install pip install pyTelegramBotAPI==4.7.1")
 import telebot 
 import requests 
 from telebot import types 
-Token  = "5757692868:AAEZMrOHNsqevn2bvgIkGXBlEth2pgUhsa0"
+Token  = "5545432251:AAF9dgBTEUIcOAEEUjLct94qhstc3222yIA"
 bot = telebot.TeleBot(Token,skip_pending=True)
 def Ch_id(id):
     ch = False
