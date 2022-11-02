@@ -115,8 +115,8 @@ def get_info(message):
 By : @aaalaaa*
                           """, parse_mode="markdown")
     
-    except:
-     	  bot.send_message(message.chat.id,"Error User .") 	  
+    except TypeError as oo:
+     	  bot.send_message(message.chat.id,f"Error User .{oo}") 	  
      	  
 
 def get_sessionid(message):
