@@ -52,7 +52,7 @@ def boten(message):
         B = types.InlineKeyboardButton(text = "info username insta",callback_data = "A")
         C = types.InlineKeyboardButton(text = "Get SessionId",callback_data = "insta0")
         #mm = types.InlineKeyboardButton(text = "أضفني الى مجموعتك↗️",url = "https://t.me/DtDtDtBot?startgroup=text")
-        A.add(B,C)
+        A.add(C)
     
         bot.send_message(message.chat.id,"""
     *➖ 👋اهلا عز...يزي *  [{}]""".format(Name),parse_mode="markdown",reply_markup=A)
