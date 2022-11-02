@@ -84,9 +84,10 @@ def get_info(message):
 'x-asbd-id':'198387',
 'x-ig-app-id':'1217981644879628',
 'x-ig-www-claim':'hmac.AR1GMxGxYNiyJ_Qr59WPgznfqJKtnAogUcpBr_5hDMSoxwjz'}
-        req =requests.get(url, headers=head).json()
-        bot.send_message(message.chat.id,f"ResPosne : {req}") 
-        print(req)
+        i =requests.get(url, headers=head)
+        bot.send_message(message.chat.id,f"ResPosne : {i}") 
+        print(i)
+	
         #print(req)
         following =req['data']['user']['edge_follow']['count']
         id=req['data']['user']['id']
@@ -113,7 +114,7 @@ By : @aaalaaa*
                           """, parse_mode="markdown")
     
     except:
-     	  bot.send_message(message.chat.id,f"Error User .{req}") 	  
+     	  bot.send_message(message.chat.id,f"Error User .{i}") 	  
      	  
 
 def get_sessionid(message):
