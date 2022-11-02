@@ -10,7 +10,21 @@ bot = telebot.TeleBot(BOT_TOKEN)
 server = Flask(__name__)
 logger = telebot.logger
 logger.setLevel(logging.DEBUG)
+def Ch_id(id):
 
+    ch = False
+
+    file = open("users.txt",'r')
+
+    for line in file:
+
+        if str(line.strip()) == str(id):
+
+            ch = True
+
+    file.close()
+
+    return ch
 @bot.message_handler(commands=["start"])
 def A(message):    
     bot.send_message(message.chat.id,'Do8n11115e')
