@@ -13,11 +13,12 @@ logger.setLevel(logging.DEBUG)
 
 @bot.message_handler(commands=["start"])
 def A(message):    
-    bot.send_message(message.chat.id,'Done')
+    
     ch = '@dtdtdt'
     sudo_id = "1372680721"
     token=Token
     idd = message.from_user.id
+    bot.send_message(message.chat.id,'Don5e')
     url = f"https://api.telegram.org/bot{token}/getchatmember?chat_id={ch}&user_id={idd}"
     req = requests.get(url)
     bot.send_message(message.chat.id,req)
