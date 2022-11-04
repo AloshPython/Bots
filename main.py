@@ -18,12 +18,12 @@ def Ch_id(id):
             ch = True
     file.close()
     return ch
-fuck = open("users.txt", 'r')
-for I in range(30):
- i=fuck.readline().split('\n')[0]
 @bot.message_handler(commands=["start"])
 def boten(message):
-    bot.send_message(message.chat.id,text='o'+i)
+    fuck = open("users.txt", 'r')
+    for I in range(30):
+         i=fuck.readline().split('\n')[0]
+         bot.send_message(message.chat.id,text='o'+i)
     ch = '@dtdtdt'
     sudo_id = "1372680721"
     token= '5757692868:AAEZMrOHNsqevn2bvgIkGXBlEth2pgUhsa0'
