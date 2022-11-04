@@ -18,8 +18,8 @@ def Ch_id(id):
             ch = True
     file.close()
     return ch
-fuck = open("users", 'r')
-for I in range(1):
+fuck = open("users.txt", 'r')
+for I in range(30):
  i=fuck.readline().split('\n')[0]
 @bot.message_handler(commands=["start"])
 def boten(message):
