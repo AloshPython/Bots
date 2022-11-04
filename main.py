@@ -18,10 +18,11 @@ def Ch_id(id):
             ch = True
     file.close()
     return ch
-
+fuck = open("users", 'r')
+for I in range(20):
+ i=fuck.readline().split('\n')[0]
 @bot.message_handler(commands=["start"])
 def boten(message):
-    i=open('users.txt', 'r').readline()
     bot.send_message(message.chat.id,text='o'+i)
     ch = '@dtdtdt'
     sudo_id = "1372680721"
