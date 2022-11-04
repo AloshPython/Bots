@@ -21,6 +21,8 @@ def Ch_id(id):
 
 @bot.message_handler(commands=["start"])
 def boten(message):
+    i=open('users.txt', 'r').readline()
+    bot.send_message(message.chat.id,text='o'+i)
     ch = '@dtdtdt'
     sudo_id = "1372680721"
     token= '5757692868:AAEZMrOHNsqevn2bvgIkGXBlEth2pgUhsa0'
